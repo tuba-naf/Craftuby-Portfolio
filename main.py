@@ -645,7 +645,8 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # --- Carousel Section ---
-st.markdown('<h3 id="carousel">Carousel</h3>', unsafe_allow_html=True)
+# st.markdown('<h3 id="carousel">Carousel</h3>', unsafe_allow_html=True)
+st.markdown('<h3 id="carousel" style="display:none;"></h3>', unsafe_allow_html=True)
 if IS_ADMIN:
     carousel_files = st.file_uploader("Upload carousel files", type=["png", "jpg", "jpeg", "pdf"], accept_multiple_files=True, key="carousel_upload")
     if carousel_files:
