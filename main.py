@@ -716,7 +716,7 @@ st.markdown("""
 **Served on the Editorial Board of Life Chronicles Research Magazine at SBA in 2024.**
             
 **Co-Author – English Poetic and Prose Anthologies.(2023–2025)**  
-* Books:Published by Series of Words.* 
+**Books:Published by Series of Words.**
   
 1. **Lost in Solitude**  
 2. **Brushing the Pages**  
