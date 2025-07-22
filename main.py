@@ -672,9 +672,13 @@ for img_path in load_saved_images("carousel"):
 st.markdown("---")
 
 # --- Section Template ---
-def section_block(id_str, title):
+
+def section_block(id_str, title, description=None):
     st.markdown(f'<a name="{id_str}"></a>', unsafe_allow_html=True)
-    st.markdown(f"## {title}") 
+    st.markdown(f"## {title}")
+
+    if description:
+        st.markdown(description)
 
     if IS_ADMIN:
         uploaded = st.file_uploader(f"Upload image or PDF for {title}", type=["png", "jpg", "jpeg", "pdf"], key=id_str)
@@ -733,9 +737,10 @@ Completed training in content development and writing.
             
 **Carried out thesis research in the field of Plant Tissue Culture (PTC) at the Department of Biotechnology, University of Karachi (UoK) in 2019.**            
 """)
-section_block("success", "Success Stories")
-st.markdown("""
-### 📜 Achievements
+section_block("success", 
+              "Success Stories",
+              description="""
+   **Research article accepted for publication in the Pakistan Journal of Botany (2025); galley proof received.**         
 
 - **Poem _Biotech to Biocon_**  
   Presented at the *Second International Conference of Biotechnology, Biocon 2.0 (2024)*
@@ -745,12 +750,39 @@ st.markdown("""
 
 - **Independent Winner Award**  
   Creative Writing Open Contest on *Biodiversity of Pakistan*, organized by *ACP & Collaborators (2023)*
+"""
+              )
+section_block(
+    "books",
+    "Books",
+    description="""
+    Co-authored five English anthologies—*Lost in Solitude*, *Brushing the Pages*, *Hope*, *Reverie*, and *Memento Mori*—published by Series of Words (2023–2025). Each volume weaves poetic and reflective prose that explores emotional resilience, introspection, and the passage of time.
+    Featured books include:
+    - *Lost in Solitude*
+    - *Brushing the Pages*
+    - *Hope*
+    - *Reverie*
+    - *Memento Mori*
+ 
+    """
+)
+st.write("View full book content at Series of Words(https://seriesofwords.com.pk/)  ")
+section_block("poetry", 
+              "Poetry",
+              description="""
+              Co-author of several English anthologies (2023–2025) and the Urdu poetic anthology *Moj-e-Dill* (2023), published by *Iqbal-e-Sukhan*. These collections feature original poems reflecting diverse emotional and cultural themes.
 """)
-section_block("books", "Books")
-st.write("View book content at https://seriesofwords.com.pk/")
-section_block("poetry", "Poetry")
-section_block("news", "News Articles")
-section_block("magazine", "Magazine")
+section_block("news", 
+              "News Articles",
+              description="""
+Contributed opinion pieces to *The Express Tribune* in 2023 under the column *The Way I Think*, addressing social and cultural topics. Also completed formal training in content writing at NS Training Pvt. Ltd. in 2022.
+""")
+section_block("magazine", 
+              "Magazine",
+              description="""
+Led project management and marketing for the Research Magazine at SBA in 2025 and served on the editorial board of *Life Chronicles* magazine in 2024. These publications focus on scientific and academic contributions lifescience especially in biotechnology research.
+"""
+              )
 st.write("View magazine content at https://www.sindhbiotech.com")
 section_block("certifications", "Certifications")
 
