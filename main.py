@@ -709,34 +709,9 @@ def section_block(id_str, title, description=None):
     st.markdown("---")
 
 # --- Sections ---
-section_block("about", "About")
-st.markdown("""
-**Research article accepted for publication in the Pakistan Journal of Botany (2025); galley proof received.**
-            
-**Led Project Management and Marketing for the Research Magazine at SBA in 2025.**
-                        
-**Served on the Editorial Board of Life Chronicles Research Magazine at SBA in 2024.**
-            
-**Co-Author – English Poetic and Prose Anthologies.(2023–2025)**  
-**Books:Published by Series of Words.**
-  
-1. **Lost in Solitude**  
-2. **Brushing the Pages**  
-3. **Hope**  
-4. **Reverie**  
-5. **Memento Mori**
-
-**Co-Author – Urdu Poetic Anthology (2023)**  
-*Moj-e-Dill*, published by *Iqbal-e-Sukhan.* 
-
-**Author – Express Tribune (2023)**  
-Contributor to opinion section *The Way I Think.* 
-
-**Content Writing Trainee – NS Training Pvt. Ltd. (2022)**  
-Completed training in content development and writing. 
-            
-**Carried out thesis research in the field of Plant Tissue Culture (PTC) at the Department of Biotechnology, University of Karachi (UoK) in 2019.**            
-""")
+section_block("about", 
+              "About",
+              description='''I have been penning my thoughts since Class 8. Content creation is a skill I have developed naturally over the years, reflecting my passion for expression. With a background in biotechnology, I blend scientific understanding with creative thinking. My journey includes writing, research, editorial work, and leadership in various academic and literary initiatives. I aim to create meaningful content that connects knowledge with expression.''')
 section_block("success", 
               "Success Stories",
               description="""
@@ -756,13 +731,16 @@ section_block(
     "books",
     "Books",
     description="""
-    Co-authored five English anthologies—*Lost in Solitude*, *Brushing the Pages*, *Hope*, *Reverie*, and *Memento Mori*—published by Series of Words (2023–2025). Each volume weaves poetic and reflective prose that explores emotional resilience, introspection, and the passage of time.
+    I co-authored five English anthologies titled Lost in Solitude, Brushing the Pages, Hope, Reverie, and Memento Mori, published by Series of Words between 2023 and 2025. I also contributed to the Urdu poetic anthology Moj-e-Dill, published by Iqbal-e-Sukhan in 2023. Each collection features poetry and reflective prose that explores emotional resilience, introspection, and the passage of time.
+
+
     Featured books include:
     - *Lost in Solitude*
     - *Brushing the Pages*
     - *Hope*
     - *Reverie*
     - *Memento Mori*
+    - *Moj-e-Dil*
  
     """
 )
@@ -770,17 +748,19 @@ st.write("View full book content at Series of Words(https://seriesofwords.com.pk
 section_block("poetry", 
               "Poetry",
               description="""
-              Co-author of several English anthologies (2023–2025) and the Urdu poetic anthology *Moj-e-Dill* (2023), published by *Iqbal-e-Sukhan*. These collections feature original poems reflecting diverse emotional and cultural themes.
+              These collections feature original poems reflecting diverse academic, emotional and cultural themes.
 """)
 section_block("news", 
               "News Articles",
               description="""
-Contributed opinion pieces to *The Express Tribune* in 2023 under the column *The Way I Think*, addressing social and cultural topics. Also completed formal training in content writing at NS Training Pvt. Ltd. in 2022.
+Contributed opinion pieces to *The Express Tribune* in 2023 under the column *The Way I Think*. 
+Also completed formal training in content writing at NS Training Pvt. Ltd. in 2022.
 """)
 section_block("magazine", 
               "Magazine",
               description="""
-Led project management and marketing for the Research Magazine at SBA in 2025 and served on the editorial board of *Life Chronicles* magazine in 2024. These publications focus on scientific and academic contributions lifescience especially in biotechnology research.
+Led project management and marketing for the Research Magazine at SBA (2025), and served on the editorial board of *Life Chronicles* (2024), both focused on life sciences, especially biotechnology research.
+""")
 """
               )
 st.write("View magazine content at https://www.sindhbiotech.com")
@@ -789,11 +769,16 @@ section_block("certifications", "Certifications")
 # --- Contact Section ---
 section_block("contact", "Contact")
 
-"""**DM or email at tuba.nafees4@gmail.com**"""
+st.markdown("**DM or email at tuba.nafees4@gmail.com**")
 
 # --- Footer ---
-st.markdown("""
-<div class="footer" style="margin-top: 4rem; padding: 1rem; background-color: #f0f0f0; text-align: center; color: #333;">
-    &copy; 2025 TN PORTFOLIO. All rights reserved.
-</div>
-""", unsafe_allow_html=True)
+st.markdown(
+"""
+st.markdown(
+    """
+    <div style="margin-top: 4rem; padding: 1rem; background-color: #f0f0f0; text-align: center; color: #333;">
+        &copy; 2025 TN PORTFOLIO. All rights reserved.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
