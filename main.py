@@ -753,19 +753,33 @@ section_block("poetry",
 section_block("news", 
               "News Articles",
               description="""
-Contributed opinion pieces to *The Express Tribune* in 2023 under the column *The Way I Think*. 
-Also completed formal training in content writing at NS Training Pvt. Ltd. in 2022.
+Contributed an opinion piece to The Express Tribune in 2023 under the column The Way I Think. Also completed formal training in content writing at NS Training Pvt. Ltd. in 2022.
 """)
-section_block("magazine", 
-              "Magazine",
-              description="""
+# --- Magazine Section ---
+section_block(
+    "magazine", 
+    "Magazine",
+    description="""
 Led project management and marketing for the Research Magazine at SBA (2025), and served on the editorial board of *Life Chronicles* (2024), both focused on life sciences, especially biotechnology research.
-""")
 """
-              )
+)
+
 st.write("View magazine content at https://www.sindhbiotech.com")
+
+# --- Certifications Section ---
 section_block("certifications", "Certifications")
+
+# --- Contact Section ---
 section_block("contact", "Contact")
 st.markdown("**DM or email at tuba.nafees4@gmail.com**")
 
-"""
+# --- Footer ---
+st.markdown(
+    """
+    <div style="margin-top: 4rem; padding: 1rem; background-color: #f0f0f0; text-align: center; color: #333;">
+        &copy; 2025 TN PORTFOLIO. All rights reserved.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
