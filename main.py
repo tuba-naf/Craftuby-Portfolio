@@ -766,12 +766,12 @@ Led project management and marketing for the Research Magazine at SBA (2025), an
 st.write("View magazine content at https://www.sindhbiotech.com")
 section_block("certifications", "Certifications")
 
-# --- Contact Section ---
+
 section_block("contact", "Contact")
 
 st.markdown("**DM or email at tuba.nafees4@gmail.com**")
 
-# --- Footer ---
+
 st.markdown(
 """
 st.markdown(
