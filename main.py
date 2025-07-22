@@ -765,20 +765,7 @@ Led project management and marketing for the Research Magazine at SBA (2025), an
               )
 st.write("View magazine content at https://www.sindhbiotech.com")
 section_block("certifications", "Certifications")
-
-
 section_block("contact", "Contact")
-
 st.markdown("**DM or email at tuba.nafees4@gmail.com**")
 
-
-st.markdown(
 """
-st.markdown(
-    """
-    <div style="margin-top: 4rem; padding: 1rem; background-color: #f0f0f0; text-align: center; color: #333;">
-        &copy; 2025 TN PORTFOLIO. All rights reserved.
-    </div>
-    """,
-    unsafe_allow_html=True
-)
