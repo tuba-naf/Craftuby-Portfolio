@@ -624,7 +624,7 @@ nav_links = [
     ("About", "#about"),
     ("Success Stories", "#success"),
     ("Books", "#books"),
-    ("Poetries", "#poetries"),
+    ("Poetry", "#poetry"),
     ("News Articles", "#news"),
     ("Magazine", "#magazine"),
     ("Certifications", "#certifications"),
@@ -674,10 +674,7 @@ st.markdown("---")
 # --- Section Template ---
 def section_block(id_str, title):
     st.markdown(f'<a name="{id_str}"></a>', unsafe_allow_html=True)
-    st.markdown(f"## {title}")
-    if id_str != "contact":
-     st.write(f"Welcome to the **{title}** section.")
-    # st.write(f"Welcome to the **{title}** section.")
+    st.markdown(f"## {title}") 
 
     if IS_ADMIN:
         uploaded = st.file_uploader(f"Upload image or PDF for {title}", type=["png", "jpg", "jpeg", "pdf"], key=id_str)
@@ -737,10 +734,24 @@ Completed training in content development and writing.
 **Carried out thesis research in the field of Plant Tissue Culture (PTC) at the Department of Biotechnology, University of Karachi (UoK) in 2019.**            
 """)
 section_block("success", "Success Stories")
+st.markdown("""
+### 📜 Achievements
+
+- **Poem _Biotech to Biocon_**  
+  Presented at the *Second International Conference of Biotechnology, Biocon 2.0 (2024)*
+
+- **First Position Award**  
+  Poetry Competition, conducted by *Spirit Financial Enterprises (2023)*
+
+- **Independent Winner Award**  
+  Creative Writing Open Contest on *Biodiversity of Pakistan*, organized by *ACP & Collaborators (2023)*
+""")
 section_block("books", "Books")
-section_block("poetries", "Poetries")
+st.write("View book content at https://seriesofwords.com.pk/")
+section_block("poetry", "Poetry")
 section_block("news", "News Articles")
 section_block("magazine", "Magazine")
+st.write("View magazine content at https://www.sindhbiotech.com")
 section_block("certifications", "Certifications")
 
 # --- Contact Section ---
